@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practicing flexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *
+{
+    margin: 0;
+    padding: 0;
+    font-family: poppins regular;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("wp2044130-sunshine-hd-wallpapers.jpg");
+    background-size: cover;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    /* background-color: red; */
+    height: 600px;
+    width: 900px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* border-radius: 30px; */
+    box-shadow: 0 10px 20px #000;
+}
+.texth
+{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+#name
+{
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1.3px solid #fff;
+    text-align: center;
+    margin: 0 30px;
+    color: #fff;
+    font-size: 20px;
+    width: 600px;
+}
+#select
+
+{
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1.3px solid #fff;
+    text-align: center;
+    margin: 0 30px;
+    color: #000;
+    font-size: 16px;
+    width: 600px;
+}
+#namey
+{
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1.3px solid #fff;
+    text-align: center;
+    margin: 0 30px;
+    color: #fff;
+    font-size: 20px;
+    width: 600px;
+}
+#btn
+{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.29);
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="glass">
+            <p class="text">
+                <h1 class="he">Contact me</h1>
+                    <p class="texth">
+                        Name: <input type="text" id="name">
+                    </p>
+                    <p class="texth">
+                        Email here: <input type="email" id="name">
+                    </p>
+                    <p class="texth">
+                        Your Query: <select name="sel" id="select">
+                            <option value="" id="opt">Like to type instead (Others)</option>
+                            <option value="" id="opt">Unable to download</option>
+                            <option value="" id="opt">Site not working</option>
+                            <option value="" id="opt">Didn't got replied</option>
+                            <option value="" id="opt">Problem not solved</option>
+                            <option value="" id="opt">Mods are not working</option>
+                        </select>
+                    </p>
+                    <p class="texth">
+                        Other Issues: <input type="text" id="namey">
+                    </p>
+            </p>
+            <button id="btn" onclick="success()">Submit</button>
+        </div>
+    </div>
+    <script>
+    function success(){
+        window.alert("Your queries have been noted. Thanks for visiting and trusting this site.")
+    }
+    </script>
+</body>
+
+</html>
